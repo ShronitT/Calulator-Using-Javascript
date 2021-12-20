@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+        function cal()
+        {
+            alert("Enter Your Choice : \n Input 1 for addition \n Input 2 for subtratcion \n Input 3 for multiplication \n Input 4 for divison \n Input 5 for comparison \n Do Note that choices are limited to 5 only");
+            var x = prompt("Enter Your Choice In This Box");
+            { 
+                if (x > 5)
+                {
+                    alert("You Have Entered Invalid Input, Please Correct Your Input and Try Again");
+                }
+                else if (x < 6)
+                {
+                    var a = parseInt(prompt("Type Your First Number Here"));
+                    {
+                        if (isNaN(a))
+                        {
+                            alert("You Have Not Entered Any Number, Please Enter Any Number");
+                        }
+                    }
+                    var b = parseInt(prompt("Type Your Second Number Here"));
+                    {
+                        if (isNaN(b))
+                        {
+                            alert("You Did Not Provide Any Input, Please Reenter Any Number");
+                        }
+                    }
+                }
+                else if (x == 0)
+                {
+                    alert("Input Unavailable Please Try Again");
+                }
+                else if (isNaN(x))
+                {
+                    alert("You Have Entered an Incorrect Input, Please Try Again With Appropriate Input");
+                }
+            }
+            switch (x)
+            {
+                case '1':
+                    {
+                        if (isNaN(a))
+                        {
+                            alert("Insufficient Input");
+                        }
+                        else if (isNaN(b))
+                        {
+                            alert("Insufficient Input");
+                        }
+                        else
+                        {
+                            var c = b + a;
+                            alert("Your Entered Numbers have sum of : " + c);
+                        }
+                    }
+                    break;
+                case '2':
+                    {
+                        if (isNaN(a))
+                        {
+                            alert("Insufficient Input");
+                        }
+                        else if (isNaN(b))
+                        {
+                            alert("Insufficient Input");
+                        }
+                        else
+                        {
+                            var c = a - b;
+                            alert("Difference of Entered Number is : " + c);
+                        }
+                    }
+                    break;
+                case '3':
+                    {
+                        if (isNaN(a))
+                        {
+                            alert("Insufficient Input");
+                        }
+                        else if (isNaN(b))
+                        {
+                            alert("Insufficient Input");
+                        }
+                        else
+                        {
+                            var c = a * b;
+                            alert("Product of Entered Number is : " + c);
+                        }
+                    }
+                    break;
+                case '4':
+                    {
+                        if (b == 0)
+                        {
+                            alert("Error! The Divison You are Trying To Perform is Invalid, Please Update The Number and Try Again");
+                        }
+                        else if (b < 0)
+                        {
+                            alert("Error! The Divison You are Trying To Perform is Invalid, Please Update The Number and Try Again");
+                        }
+                        else if (isNaN(a))
+                        {
+                            alert("Insufficient Input");
+                        }
+                        else if (isNaN(b))
+                        {
+                            alert("Insufficient Input");
+                        }
+                        else
+                        {
+                            var c = a / b;
+                            alert("Divison of Entered Number is : " + c);
+                        }
+                    }
+                case '5':
+                    {
+                        if (a > b)
+                        {
+                            alert("a is greater than b");
+                        }
+                        else if (b > a)
+                        {
+                            alert("b is greater than a");
+                        }
+                        else if (a == b)
+                        {
+                            alert("Error! The Operation is Invalid, Please Update The Numbers and Try Again");
+                        }
+                        else if (isNaN(a))
+                        {
+                            alert("Insufficient Input");
+                        }
+                        else if (isNaN(b))
+                        {
+                            alert("Insufficient Input");
+                        }
+                        else
+                        {
+                            alert("Operation is Now Terminated");
+                        }
+                    }
+            }
+        }
+    </script>
+    <title></title>
+</head>
+<body>
+    <input type="button" onclick="cal()" value="Click This Button To See What It is Hidding" />
+</body>
+</html>
